@@ -1,0 +1,38 @@
+<div id="addForm">
+    <form [formGroup]="expences" (ngSubmit)="onSubmit()">
+        <h1>New expence</h1>
+            <label for="Name">Expence Name</label>
+            <input type="text" formControlName="name">
+            <label>Budget</label>
+            <select formControlName="budget">
+                <option *ngFor="let bud of budgets" [value]="bud.budget_id">{{bud.name}}</option>
+            </select>
+            <label>Category</label>
+            <select formControlName="category">
+                <option *ngFor="let cat of categories" [value]="cat.category_id">{{cat.name}}</option>
+            </select>
+            <label>Lines</label>
+            <select formControlName="line">
+                    <option *ngFor="let lin of lines" [value]="lin.line_id">{{lin.name}}</option>
+            </select>
+            <label>Amount</label>
+                <input type="text" formControlName="amount">
+            <label>Date</label>
+                <input type="date" formControlName="date">
+            <label>Payment method</label>
+            <select formControlName="pmethod">
+                    <option *ngFor="let met of methods" [value]="met">{{met}}</option>
+            </select>
+            <label>Buyer Name</label>
+                <input type="text" formControlName="buyer">
+    <div>
+    <button id="button" class="button" (click)="showSuccess()" label="Warn" class="ui-button-warning">Submit</button>
+    </div>
+    </form>
+</div>
+
+
+<div class="alert alert-success" role="alert" *ngIf='showMsg' id='alert123'>
+        New expence added successful!
+</div>
+    

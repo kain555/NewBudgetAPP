@@ -1,0 +1,79 @@
+form {
+    background: #fff;
+    padding: 40px 150px 50px;
+    max-width: 800px;
+    margin: 10px auto 0;
+    box-shadow: 0 0 1em #222;
+    border-radius: 2px;
+    transform: translateY(-60px) translateX(60px);
+  }
+  
+  h1 {
+      margin:0 0 10px 0;
+      padding:30px;
+      text-align:center;
+      font-size:55px;
+      color: rgb(209, 143, 1);
+      border-bottom:solid 1px #e5e5e5;
+  }
+  
+  input {
+      background: rgba(255,255,255,0.1);
+    border: none;
+    font-size: 16px;
+    height: auto;
+    margin: 0;
+    outline: 0;
+    padding: 15px;
+    width: 100%;
+    background-color: #e8eeef;
+    color: #0400ff;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 10px;
+  }
+  
+  button {
+      padding: 19px 39px 18px 39px;
+      color: #FFF;
+      background-color: rgb(209, 143, 1);
+      font-size: 18px;
+      text-align: center;
+      font-style: normal;
+      border-radius: 5px;
+      width: 100%;
+      border: 1px solid rgb(209, 143, 1);
+      border-width: 1px 1px 3px;
+      box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+      margin-bottom: 10px;
+    }
+  
+    option:checked
+    {
+      color: black; 
+    }
+  
+    select{
+      background: rgba(255,255,255,0.1);
+      border: none;
+      font-size: 20px;
+      height: auto;
+      margin: 0;
+      outline: 0;
+      padding: 15px;
+      width: 100%;
+      background-color: #e8eeef;
+      color: rgb(209, 143, 1);
+      box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+      margin-bottom: 10px;
+      float: right;
+    }
+  
+    label{
+        font-size: 20px;
+        float: left;
+    }
+
+    #alert123 {
+      transform: translateY(-50px);
+    }
+  

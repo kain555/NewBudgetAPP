@@ -1,0 +1,18 @@
+<div class="container">
+  <header>
+      <section class="logo" routerLinkActive="active" routerLink="main">
+        </section>
+        <h1>BUDGET CONTROLLER</h1>
+  </header>
+  <aside>
+     <ul class='list'>
+      <li routerLinkActive="active" routerLink="budgets" ><button class="btn btn-warning">Budgets</button></li>
+        <li routerLinkActive="active" routerLink="expences"><button class="btn btn-warning">Expences</button></li>
+        <li routerLinkActive="active" routerLink="montlyr"><button class="btn btn-warning">Montly Statement</button></li>
+        <li routerLinkActive="active" routerLink="mbudget"><button class="btn btn-warning">Make budget</button></li>  
+      </ul>
+  </aside>
+  <main>
+      <router-outlet></router-outlet> 
+  </main>
+</div>

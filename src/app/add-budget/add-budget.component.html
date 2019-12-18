@@ -1,0 +1,21 @@
+<div id='addBudget'>
+            <form [formGroup]="budget" (ngSubmit)="addBudget()">
+                  <h1>Add new Budget</h1>
+                      <label for="Name">Budget Name</label>
+                          <input id="name" class="form-control" type="text" formControlName="name" required>
+                      <label>Month (0-12)</label>
+                      <input type="number" name="quantity" min="1" max="12" formControlName="month">
+                      <label>Year (2000-2030)</label>
+                      <input type="number" name="quantity" min="2000" max="2030" formControlName="year">
+                      <label>Comment</label>
+                          <input type="text" formControlName="comment">
+                      <label>Owner Name</label>
+                          <input type="text" formControlName="ownerName">
+              <div>
+              <button id="button" class="button">Submit</button>
+              </div>
+              </form>
+      </div>
+    <div class="alert alert-success" role="alert" *ngIf='showMsg' id='alert123'>
+        New budget added successful!
+</div>

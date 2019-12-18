@@ -1,0 +1,11 @@
+main {
+    min-height: 100px;
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 500px;
+    font-size: 40px;
+    padding: 120px;
+    margin-bottom: 40px;
+    border-top: outset rgb(226, 225, 225);
+    text-align: center;
+}

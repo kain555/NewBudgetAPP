@@ -1,0 +1,90 @@
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+.container {
+    max-width: 90%;
+    margin: 20px auto;
+    border: 1px solid #e1e1e1;
+    border-radius: 15px;
+    box-shadow: 0 0 35px grey;
+    padding: 20px;
+    background: linear-gradient(to bottom, #ffffffe1 70%, #afafaf 100%);
+}
+header {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    background: url('budgetLOGO.png');
+    width: 170px;
+    height: 170px;
+    margin-left: 50px;
+}
+li {
+    margin: 10px 0px;
+    color: rgb(1, 11, 146);
+}
+h1 {
+    font-size: 80px;
+    padding: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(209, 143, 1);
+    transform: translateX(-30%);
+    font-family: 'Baloo Bhai', cursive;
+}
+main {
+    font-size: 40px;
+    padding: 120px;
+    margin-bottom: 40px;
+    border-top: outset rgb(226, 225, 225);
+    text-align: center;
+    margin-top: 130px;
+    max-width: 100%;
+    min-width: 100%;
+
+}
+aside{
+    min-height: 10px;
+    float: left;
+    max-width: 100%;
+    min-width: 100%;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 40px;
+    border-radius: 20px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding-right: 30px;
+    overflow: hidden;
+    background-color: #333;
+    border-radius: 70px;
+  }
+  
+  li {
+    float: left;
+    margin-left: 190px;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+
+  button {
+      font-size: 25px;
+      transform: translateY(-5px);
+  }

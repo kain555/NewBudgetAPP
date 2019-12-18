@@ -1,0 +1,41 @@
+<div id='budgetMoreInfo'>
+    <p-dialog header="More info about: {{budName}}" [responsive]="true" showEffect="fade" [modal]="true" [closable]="true" [(visible)]="display">
+      <p>
+      Month: {{budMonth}} <br>
+      Year: {{budYear}} <br>
+      Owner name: {{budOwner}} <br>
+      Sum of expences: {{expenceSum}} <br>
+      Budgeted: {{monthBudgeted || "No budgeted"}}
+      </p>  
+          <p-footer>
+              <button type="button" pButton icon="pi pi-check" (click)="display=false" label="Ok" class="btn btn-secondary">Hide</button>
+          </p-footer>
+  </p-dialog>
+  </div>
+<main>
+  <h1> Budget's List</h1>
+  <button [routerLink]="['/addBudget']" id='CreateButton' class="btn btn-success">Create new budget</button>
+  <table class="table table-striped">
+      <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Owner Name</th>
+        <th scope="col">Show more info</th>
+        <th scope="col"></th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let budget of budgets">
+        <td>{{budget.name}}</td>
+        <td>{{budget.ownerName}}</td>
+        <td><button (click)="onClick(budget)" class="btn btn-primary">More info</button></td>
+        <td><button (click)="delete(budget)" class="btn btn-danger">DELETE</button></td>
+      </tr>
+      </tbody>
+    </table>
+  
+  
+  
+  
+  
+ 
